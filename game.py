@@ -9,7 +9,7 @@ screen = Screen()
 screen.setup(height=600, width=600)
 screen.bgcolor("black")
 screen.title("Snake Game")
-# screen.tracer(0)
+screen.tracer(0)
 game_on = True
 
 
@@ -20,7 +20,7 @@ score = ScoreBoard()
 screen.listen()
 
 screen.onkey(snake.left, "Left")
-screen.onkey(snake.up, "Up")  # This will call the up function if the "Left" arrow key is pressed
+screen.onkey(snake.up, "Up")  
 screen.onkey(snake.down, "Down")
 screen.onkey(snake.right, "Right")
 
